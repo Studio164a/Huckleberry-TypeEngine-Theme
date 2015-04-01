@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>Huckleberry TypeEngine Template</title>
+	<link rel='stylesheet' href='assets/css/style.css'>	
+	<style>
+	?{{Css}}
+		${{Css}}
+	?{{/Css}}
+	?{{FeaturedImgSrc}}
+		#author-block, .header {background-image: url(${{FeaturedImgSrc}});
+	}
+	?{{/FeaturedImgSrc}}
+	</style>		
+</head>
+
+<body id="top">
+
+	<header class="header">					
+		<div class="article-titles">
+			?{{Title}}
+				<h1 class="article-title"><span>${{Title}}</span></h1>
+			?{{/Title}}
+
+			?{{Subtitle}}
+				<h4 class="article-subtitle">${{Subtitle}}</h4>
+			?{{/Subtitle}}			
+		</div>
+	</header>
+	
+	<div class="clearfix"></div>
+
+	?{{ArticleType}}
+		<p class="article-type"><span>in</span> ${{ArticleType}}</p>
+	?{{/ArticleType}}
+
+	?{{AuthorName}}
+		<p class="author-name-header"><a href="#author-block" class="scroll">${{AuthorName}}</a></p>
+	?{{/AuthorName}}
+
+	<article class="article-body container">
+		${{Body}}
+	</article>
+
+	?{{Endnote}}
+		<section class="endnote container">
+			<p><em>${{Endnote}}</em></p>  
+		</section>
+	?{{/Endnote}}
+
+	?{{Ad}}
+		<section class="ad-block container">
+			<a href="${{AdUrl}}">
+				<img src="${{AdImgSrc}}" alt="${{AdAlt}}">
+			</a>
+		</section>
+	?{{/Ad}}
+
+	<footer class="footer clearfix" id="author-block">
+
+		<div class="container">
+
+			?{{AuthorImg}}
+				<div class="author-img">
+					<img src="${{AuthorImg}}">
+				</div>
+			?{{/AuthorImg}}
+
+			<div class="author-wrap">
+
+				<ul class="author-social">
+					?{{AuthorWebsite}}
+						<li><a class="icon icon-link" title="Author's Website" href="${{AuthorWebsite}}"></a></li>
+					?{{/AuthorWebsite}}
+
+					?{{AuthorTwitter}}
+						<li><a class="icon icon-twitter" title="Author's Twitter Account" href="${{AuthorTwitter}}"></a></li>
+					?{{/AuthorTwitter}}
+
+					?{{AuthorAppnet}}
+						<li><a class="icon icon-appdotnet" title="Author's App.net Account" href="${{AuthorAppnet}}"></a></li>
+					?{{/AuthorAppnet}}
+
+					?{{AuthorFacebook}}
+						<li><a class="icon icon-facebook" title="Author's Facebook Account" href="${{AuthorFacebook}}"></a></li>
+					?{{/AuthorFacebook}}
+				</ul>
+
+				?{{AuthorName}}
+					<h4 class="author-name">${{AuthorName}}</h4>
+				?{{/AuthorName}}
+
+				?{{AuthorBio}}
+					<p class="author-bio">${{AuthorBio}}</p>
+				?{{/AuthorBio}}
+			</div>
+				
+			<a class="scroll back-to-top icon-up" href="#top"></a>
+
+		</div>
+
+	</footer>
+
+	<script src='assets/js/jquery-2.0.3.min.js'></script>
+	<script src="assets/js/jquery.smooth-scroll.min.js"></script>
+	<script src="assets/js/jquery.fitvids.js"></script>
+	<script src='assets/js/app.js'></script>
+
+</body>
+
+</html>

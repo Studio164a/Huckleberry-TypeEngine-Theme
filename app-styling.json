@@ -1,0 +1,337 @@
+{    
+    "coverHeight": 176,
+    "coverWidth": 120,
+    "issueHeaderDisplay": {
+        "publicationDates": false,
+        "teasers": true,
+        "covers": true
+    },
+    "issueSelectorDisplay": {
+        "publicationDates": true,
+        "teasers": false,
+        "covers": false,
+        "topBorder": false,
+        "bottomBorder": true        
+    },
+    "articleSelectorDisplay": {
+        "topBorder": false,
+        "bottomBorder": false
+    },
+    "format": {
+        "fonts": {
+            "customFonts": ["http://www.typeengine.net/fonts/SourceSansPro-Bold.ttf", "http://www.typeengine.net/fonts/SourceSansPro-Regular.ttf", "http://www.typeengine.net/fonts/SourceSansPro-Light.ttf","http://www.typeengine.net/fonts/SourceSansPro-LightItalic.ttf"],
+            "issueTitle": {
+                "name": "SourceSansPro-Bold",
+                "size": 22
+            },
+            "issueTeaser": {
+                "name": "SourceSansPro-Regular",
+                "size": 16
+            }, 
+            "issuePublicationDate": {
+                "name": "SourceSansPro-Light",
+                "size": 16
+            },
+            "articleTitle": {
+                "name": "SourceSansPro-Bold",
+                "size": 28
+            },
+            "articleAuthor": {
+                "name": "SourceSansPro-Light",
+                "size": 16
+            },
+            "articleTeaser": {
+                "name": "SourceSansPro-LightItalic",
+                "size": 16
+            },
+            "button": {
+                "name": "SourceSansPro-Bold",
+                "size": 16
+            },
+            "buttonSubscribe": {
+                "name": "SourceSansPro-Bold",
+                "size": 16
+            },
+            "buttonRestore": {
+                "name": "SourceSansPro-Bold",
+                "size": 16
+            },
+            "buttonDownload": {
+                "name": "SourceSansPro-Bold",
+                "size": 16
+            },
+            "buttonBuy": {
+                "name": "SourceSansPro-Bold",
+                "size": 16
+            },
+            "buttonBack": {
+                "name": "SourceSansPro-Regular",
+                "size": 16
+            },
+            "settingsTitle": {
+                "name": "SourceSansPro-Bold",
+                "size": 22
+            },
+            "settingsButtonTitle": {
+                "name": "SourceSansPro-Light",
+                "size": 22
+            }                     
+        },
+        "colors": {
+            "issueSelectorBackground": [
+                255, 255, 255,1
+            ],
+            "issueTitle": [
+                60, 60, 60, 1
+            ],
+            "issueTitleSelected": [
+                250, 250, 250, 1
+            ],
+            "issueTeaser": [
+                60, 60, 60, 1
+            ],
+            "issueTeaserSelected": [
+                220, 220, 220, 1
+            ],
+            "issuePublicationDate": [
+                160, 160, 160, 1
+            ],
+            "issuePublicationDateSelected": [
+                220, 220, 220, 1
+            ],
+            "issueBackground": [
+                255, 255, 255, 1
+            ],
+            "issueSelectedBackground": [
+                30, 30, 30, 1
+            ],
+            "issueCellBorderColor": [
+                30, 30, 30, 1
+            ],
+            "articleCellBorderColor": [
+                30, 30, 30, 1
+            ],            
+            "articleSelectorHeaderBackground": [
+                255, 255, 255, 1
+            ],
+            "articleSelectorHeaderTitle": [
+                60, 60, 60, 1
+            ],
+            "articleSelectorHeaderPublicationDate": [
+                60, 60, 60, 1
+            ],
+            "articleSelectorHeaderTeaser": [
+                60, 60, 60, 1
+            ],
+            "articleCellBackground": [
+                255, 255, 255, 1
+            ],
+            "articleCellSelectedBackground": [
+                30, 30, 30, 1
+            ],
+            "articleTitle": [
+                60, 60, 60, 1
+            ],
+            "articleTitleSelected": [
+                250, 250, 250, 1
+            ],
+            "articleAuthor": [
+                60, 60, 60, 1.0
+            ],
+            "articleAuthorSelected": [
+                250, 250, 250, 1
+            ],
+            "articleTeaser": [
+                60, 60, 60, 1.0
+            ],
+            "articleTeaserSelected": [
+                250, 250, 250, 1
+            ],
+            "buttonBackground": [
+                30, 30, 30, 0.9
+            ],
+            "buttonBorder": [
+                30, 30, 30, 0.0
+            ],
+            "buttonText": [
+                250, 250, 250, 1
+            ],
+            "buttonSubscribeBackground": [
+                0, 0, 0, 0
+            ],
+            "buttonSubscribeSelected": [
+                30, 30, 30, 1
+            ],
+            "buttonSubscribeBorder": [
+                121, 189, 154, 1
+            ],
+            "buttonSubscribeText": [
+                250, 250, 250, 1
+            ],
+            "buttonRestoreBackground": [
+                60, 60, 60, 1.0
+            ],
+            "buttonRestoreSelected": [
+                60, 60, 60, 0.5
+            ],
+            "buttonRestoreBorder": [
+                50, 50, 50, 0.0
+            ],            
+            "buttonRestoreText": [
+                30, 30, 30, 1
+            ],
+            "buttonDownloadBackground": [
+                121, 189, 154, 0.0
+            ],
+            "buttonDownloadSelected": [
+                30, 30, 30, 1
+            ],
+            "buttonDownloadBorder": [
+                121, 189, 154, 1
+            ],
+            "buttonDownloadText": [
+                60, 60, 60, 1
+            ],
+            "buttonDownloadProgressBar": [
+                121, 189, 154, 1
+            ],
+            "buttonDownloadProgressBackground": [
+                50, 50, 50, 0.5
+            ],
+            "buttonBuyBackground": [
+                50, 50, 50, 1
+            ],
+            "buttonBuyBorder": [
+                50, 50, 50, 0.0
+            ],
+            "buttonBuyText": [
+                30, 30, 30, 1
+            ],
+            "buttonBackBackground": [
+                73, 87, 137, 1
+            ],
+            "buttonBackBorder": [
+                30, 30, 30, 0
+            ],
+            "buttonBackText": [
+                255, 255, 255, 1
+            ],
+            "settingsTitleText": [
+                60, 60, 60, 1
+            ],       
+            "settingsBackground": [
+                200, 200, 200, 1
+            ],   
+            "settingsCellBackground": [
+                190, 190, 190, 1
+            ],
+            "settingsButtonBackground": [
+                190, 190, 190, 1
+            ],
+            "settingsButtonSelectedBackground": [
+                30, 30, 30, 1
+            ],
+            "settingsButtonTitle": [
+                30, 30, 30, 1
+            ],
+            "settingsButtonTitleHighlighted": [
+                250, 250, 250, 1
+            ],            
+            "settingsPrivacyPolicyBackground": [
+                200, 200, 200, 1
+            ],
+            "settingsPrivacyPolicyContent": [
+                60, 60, 60, 1
+            ],
+            "settingsFeedbackBackground": [
+                200, 200, 200, 1
+            ]                     
+        },
+        "dimensions": {            
+            "buttonBorderSize": 1,
+            "buttonBorderRadius": 22,
+            "buttonSubscribeBorderSize": 1,
+            "buttonSubscribeBorderRadius": 5,
+            "buttonDownloadBorderSize": 1,
+            "buttonDownloadBorderRadius": 5,
+            "buttonBuyBorderSize": 1,
+            "buttonBuyBorderRadius": 5,
+            "buttonRestoreBorderSize": 1,
+            "buttonRestoreBorderRadius": 5,
+            "buttonBackBorderSize": 0,
+            "buttonBackBorderRadius": 0,
+            "settingsButtonRadius": 0,
+            "settingsButtonBorderWidth": 0,
+            "issueCellBorderSize": 1,
+            "articleCellBorderSize": 1                       
+        },
+        "padding": {
+            "issueCoverArtPadding": [
+                0, 8, 8, 0
+            ],
+            "issueCellPadding": [
+                8, 8, 16, 8
+            ],
+            "issueCellCoverPadding": [
+                0, 0, 0, 0
+            ],
+            "issueCellTitlePadding": [
+                16, 0, 0, 0
+            ],
+            "issueCellPublishedDatePadding": [
+                0, 0, 0, 0
+            ],
+            "issueCellTeaserPadding": [
+                0, 0, 0, 0
+            ],
+            "articleHeaderCoverArtPadding": [
+                8, 8, 8, 0
+            ],
+            "articleHeaderPadding": [
+                16, 16, 16, 16
+            ],
+            "articleHeaderCoverPadding": [
+                10, 10, 10, 10
+            ],
+            "articleHeaderTitlePadding": [
+                0, 0, 0, 16
+            ],
+            "articleHeaderPublishedDatePadding": [
+                0, 0, 0, 16
+            ],
+            "articleHeaderTeaserPadding": [
+                0, 0, 0, 16
+            ],
+            "articleCellPadding": [
+                0, 16, 24, 16
+            ],
+            "articleCellTitlePadding": [
+                0, 0, 0, 0
+            ],
+            "articleCellAuthorPadding": [
+                0, 0, 0, 0
+            ],
+            "articleCellTeaserPadding": [
+                0, 0, 0, 0
+            ],
+            "issueCellBorderPadding": [
+                0, 0, 0, 0           
+            ],
+            "articleCellBorderPadding": [
+                0, 0, 0, 0                
+            ]
+        },
+        "positions": {
+            "issueCellTitleAlignment": 0,
+            "issueCellPublishedDateAlignment": 0,
+            "issueCellTeaserAlignment": 0,
+            "articleHeaderTitleAlignment": 0,
+            "articleHeaderPublishedDateAlignment": 0,
+            "articleHeaderTeaserAlignment": 0,
+            "articleCellTitleAlignment": 0,
+            "articleCellAuthorAlignment": 0,
+            "articleCellTeaserAlignment": 0,
+            "buttonBackTextAlignment": 0
+        }
+    }
+}

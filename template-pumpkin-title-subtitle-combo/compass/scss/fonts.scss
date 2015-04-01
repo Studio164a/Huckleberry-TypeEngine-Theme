@@ -1,0 +1,125 @@
+/* Fonts
+================================================== */
+@font-face {
+	font-family: 'Merriweather-Light';
+	src: url("../font/Merriweather-Light.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: 'Merriweather-LightItalic';
+	src: url("../font/Merriweather-LightItalic.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: 'Merriweather-Regular';
+	src: url("../font/Merriweather-Regular.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal; 
+}
+
+@font-face {
+	font-family: 'SourceSansPro-Bold';
+	src: url("../font/SourceSansPro-Bold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SourceSansPro-Light';
+	src: url("../font/SourceSansPro-Light.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SourceSansPro-LightItalic';
+	src: url("../font/SourceSansPro-LightItalic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SourceSansPro-Regular';
+	src: url("../font/SourceSansPro-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'icons';
+	src: url("../font/typeengine-icons.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;	
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	/* opacity: .8; */
+
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: .2em;
+
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-twitter:before { content: '\e801'; } /* '' */
+.icon-facebook:before { content: '\e802'; } /* '' */
+.icon-appnet:before { content: '\e800'; } /* '' */
+.icon-link:before { content: '\e803'; } /* '' */
+.icon-up:before { content: '\e804'; } /* '' */
+
+/* Fonts ***/
+
+body {
+	font-family: 'Merriweather-Light';
+}
+
+.article-body p:first-child {
+	font-family: 'Merriweather-Regular';
+}
+
+em, i, .article-subtitle, .article-type span {
+	font-family: 'Merriweather-LightItalic';
+	font-style: normal;
+}
+
+h4, h5, h6, .article-title, .article-type, #author-block .author-name, .pullquote blockquote::before, .article-body > p:first-of-type:first-letter {
+	font-family: 'SourceSansPro-Bold';
+}
+
+h1, h2, h3, .header .author-name {
+	font-family: 'SourceSansPro-Light';
+}
+
+.asset-container em {
+	font-family: 'SourceSansPro-LightItalic';
+}
+
+blockquote {
+	font-family: 'SourceSansPro-Regular';
+}

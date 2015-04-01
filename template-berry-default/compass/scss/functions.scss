@@ -1,0 +1,27 @@
+/* Mixins
+================================================== */
+@mixin calc($property, $expression) { 
+	#{$property}: -webkit-calc(#{$expression}); 
+	#{$property}: calc(#{$expression}); 
+} 
+
+@mixin iphone-wrapper-wide($property) {
+	#{$property}:  -webkit-calc(100% - #{$margin});
+	#{$property}: calc(100% - #{$margin});
+}
+
+@mixin iphone-wrapper($property) {
+	#{$property}: -webkit-calc(100% - (#{$margin} * 3));
+	#{$property}: calc(100% - (#{$margin} * 3));
+}
+
+@mixin author-border-sides($property) {
+	#{$property}: -webkit-calc(100% + (#{$margin}));
+	#{$property}: calc(100% + (#{$margin}));
+}
+
+@mixin wrap-wide($margin) {
+	width: -webkit-calc(100% + (#{$margin} * 2)); 
+	width: calc(100% + (#{$margin} * 2)); 
+	margin-left: $margin * -1;
+}

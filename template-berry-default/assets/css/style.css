@@ -1,0 +1,744 @@
+/* Variables
+================================================== */
+/* Colours */
+/* Font sizes */
+/* Opening paragraph styling */
+/* 19px */
+/* 31px */
+/* 120px */
+/* 90px */
+/* Variables used in our media queries */
+/* iPad wrapper width */
+/* Mixins
+================================================== */
+/* Fonts
+================================================== */
+@font-face {
+  font-family: 'Merriweather-Light';
+  src: url("../font/Merriweather-Light.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather-LightItalic';
+  src: url("../font/Merriweather-LightItalic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather-Regular';
+  src: url("../font/Merriweather-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Bold';
+  src: url("../font/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Light';
+  src: url("../font/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-LightItalic';
+  src: url("../font/SourceSansPro-LightItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+  src: url("../font/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro-Semibold';
+  src: url("../font/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'icons';
+  src: url("../font/typeengine-icons.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 66, ../../compass/scss/fonts.scss */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 97, ../../compass/scss/fonts.scss */
+.icon-twitter:before {
+  content: '\e801';
+}
+
+/* '' */
+/* line 98, ../../compass/scss/fonts.scss */
+.icon-facebook:before {
+  content: '\e802';
+}
+
+/* '' */
+/* line 99, ../../compass/scss/fonts.scss */
+.icon-appnet:before {
+  content: '\e800';
+}
+
+/* '' */
+/* line 100, ../../compass/scss/fonts.scss */
+.icon-link:before {
+  content: '\e803';
+}
+
+/* '' */
+/* line 101, ../../compass/scss/fonts.scss */
+.icon-up:before {
+  content: '\e804';
+}
+
+/* '' */
+/* Font declarations */
+/* line 105, ../../compass/scss/fonts.scss */
+body {
+  font-family: 'Merriweather-Light';
+}
+
+/* line 109, ../../compass/scss/fonts.scss */
+.article-body p:first-child {
+  font-family: 'Merriweather-Regular';
+}
+
+/* line 113, ../../compass/scss/fonts.scss */
+em, i {
+  font-family: 'Merriweather-LightItalic';
+  font-style: normal;
+}
+
+/* line 118, ../../compass/scss/fonts.scss */
+h4, h5, h6, .article-title, .article-type, #author-block .author-name, .pullquote blockquote::before, .article-body > p:first-of-type:first-letter {
+  font-family: 'SourceSansPro-Bold';
+}
+
+/* line 122, ../../compass/scss/fonts.scss */
+h1, h2, h3, .header .author-name {
+  font-family: 'SourceSansPro-Light';
+}
+
+/* line 126, ../../compass/scss/fonts.scss */
+.asset-container em {
+  font-family: 'SourceSansPro-LightItalic';
+}
+
+/* line 130, ../../compass/scss/fonts.scss */
+blockquote {
+  font-family: 'SourceSansPro-Regular';
+}
+
+/* line 134, ../../compass/scss/fonts.scss */
+.article-subtitle {
+  font-family: 'SourceSansPro-Semibold';
+}
+
+/* Structure
+================================================== */
+/* line 7, ../scss/style.scss */
+html {
+  height: 100%;
+}
+
+/* line 11, ../scss/style.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #565656;
+  font-size: 15px;
+  line-height: 1.6em;
+  background-color: white;
+}
+
+/* line 20, ../scss/style.scss */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-margin-start: 0;
+  -webkit-margin-after: 0;
+}
+
+/* line 27, ../scss/style.scss */
+.container {
+  margin: 0 auto;
+}
+
+/* line 31, ../scss/style.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 40, ../scss/style.scss */
+* {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+/* Typography
+================================================== */
+/* Headers ***/
+/* line 50, ../scss/style.scss */
+h1 {
+  font-size: 69.225px;
+  line-height: 69.225px;
+}
+
+/* line 55, ../scss/style.scss */
+h2 {
+  font-size: 34.5px;
+  line-height: 34.5px;
+}
+
+/* line 60, ../scss/style.scss */
+h3 {
+  font-size: 27.69px;
+  line-height: 33.228px;
+}
+
+/* line 65, ../scss/style.scss */
+h4 {
+  font-size: 20.7px;
+  line-height: 28.98px;
+}
+
+/* line 70, ../scss/style.scss */
+h5 {
+  font-size: 18.45px;
+  line-height: 27.675px;
+}
+
+/* line 75, ../scss/style.scss */
+h6 {
+  font-size: 16.2px;
+  line-height: 25.92px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* line 82, ../scss/style.scss */
+p {
+  margin-bottom: 24px;
+}
+
+/* line 86, ../scss/style.scss */
+a {
+  color: #495789;
+}
+
+/* line 96, ../scss/style.scss */
+.header img,
+.article-body img,
+.footer img,
+.asset-container img,
+.ad-block img,
+.featured-img img,
+.featured-img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Lists ***/
+/* line 103, ../scss/style.scss */
+ul, ol, dl {
+  margin-bottom: 24px;
+}
+
+/* line 107, ../scss/style.scss */
+ul, ol {
+  padding-left: 20px;
+}
+
+/* line 111, ../scss/style.scss */
+li {
+  margin-bottom: 12px;
+}
+
+/* line 118, ../scss/style.scss */
+ol ol,
+ul ul,
+ul ol,
+ol ul {
+  margin-top: 12px;
+  margin-bottom: 0;
+  margin-left: 24px;
+}
+
+/* line 126, ../scss/style.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 130, ../scss/style.scss */
+ul ul {
+  list-style: circle;
+}
+
+/* line 134, ../scss/style.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 138, ../scss/style.scss */
+ol ol {
+  list-style: upper-roman;
+}
+
+/* line 142, ../scss/style.scss */
+ol ol ol {
+  list-style: lower-roman;
+}
+
+/* line 146, ../scss/style.scss */
+dt {
+  font-weight: 400;
+}
+
+/* Other elements ***/
+/* Header
+================================================== */
+/* line 155, ../scss/style.scss */
+.header {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin-bottom: 24px;
+  text-align: center;
+}
+/* line 162, ../scss/style.scss */
+.header .author-name {
+  overflow: hidden;
+}
+/* line 165, ../scss/style.scss */
+.header .author-name a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #565656;
+}
+/* line 173, ../scss/style.scss */
+.header .author-name a::before,
+.header .author-name a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  width: 1024px;
+  height: 2px;
+  background-color: #e6e6e6;
+}
+/* line 183, ../scss/style.scss */
+.header .author-name a::before {
+  right: -webkit-calc(100% + (24px));
+  right: calc(100% + (24px));
+}
+/* line 187, ../scss/style.scss */
+.header .author-name a::after {
+  left: -webkit-calc(100% + (24px));
+  left: calc(100% + (24px));
+}
+
+/* line 193, ../scss/style.scss */
+.featured-img {
+  line-height: 0;
+}
+
+/* line 197, ../scss/style.scss */
+.article-type {
+  min-height: 40.71px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 120px;
+  margin-left: auto;
+  font-size: 17.307px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+/* line 211, ../scss/style.scss */
+.article-type p {
+  position: relative;
+  display: inline;
+  top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+/* line 224, ../scss/style.scss */
+.article-title {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 144px;
+  text-transform: uppercase;
+  color: #495789;
+  line-height: 0.86em;
+  letter-spacing: -1px;
+}
+/* line 235, ../scss/style.scss */
+.article-title span {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Article
+================================================== */
+/* line 243, ../scss/style.scss */
+.article-subtitle {
+  margin-bottom: 24px;
+  color: #495789;
+  line-height: 1.6em;
+}
+
+/* line 249, ../scss/style.scss */
+.article-body::before {
+  content: "";
+  display: block;
+  margin-top: 0;
+  margin-left: auto;
+  margin-bottom: 48px;
+  margin-right: auto;
+  width: 140px;
+  height: 1px;
+  background-color: #8a8a8a;
+}
+
+/* line 263, ../scss/style.scss */
+.article-body {
+  position: relative;
+  margin-bottom: 96px;
+}
+/* line 267, ../scss/style.scss */
+.article-body > p:first-of-type {
+  font-size: 19.0005px;
+  line-height: 30.98982px;
+  color: #3d3d3d;
+}
+/* line 272, ../scss/style.scss */
+.article-body > p:first-of-type:first-letter {
+  float: left;
+  padding-right: 12px;
+  font-size: 120.00336px;
+  line-height: 90.00252px;
+}
+/* line 282, ../scss/style.scss */
+.article-body .asset-container,
+.article-body .markdown-video,
+.article-body > blockquote {
+  padding-left: 0;
+  padding-right: 0;
+}
+/* line 289, ../scss/style.scss */
+.article-body .asset-container {
+  float: left;
+  line-height: 0;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+/* line 298, ../scss/style.scss */
+.article-body .asset-container em {
+  font-size: 13.845px;
+  line-height: 1.3em;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin: 0 auto;
+  border-bottom: 1px solid #8a8a8a;
+}
+/* line 311, ../scss/style.scss */
+.article-body .markdown-video {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+/* line 318, ../scss/style.scss */
+.article-body audio {
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+/* line 326, ../scss/style.scss */
+.article-body .pullquote {
+  position: relative;
+  padding: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border-left: 2px solid #495789;
+  font-size: 20.769px;
+  line-height: 1.4em;
+  background-color: #edeef5;
+}
+/* line 341, ../scss/style.scss */
+.article-body > blockquote {
+  float: left;
+  width: 192px;
+  margin-bottom: 24px;
+  color: #495789;
+}
+
+/* line 351, ../scss/style.scss */
+.endnote {
+  margin-bottom: 96px;
+}
+
+/* Author box
+================================================== */
+/* line 358, ../scss/style.scss */
+#author-block {
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #edeef5;
+}
+/* line 368, ../scss/style.scss */
+#author-block a {
+  color: #565656;
+  text-shadow: 0 1px 0 #fff;
+}
+/* line 373, ../scss/style.scss */
+#author-block .author-name {
+  float: left;
+  margin-bottom: 12px;
+  line-height: 1em;
+  text-align: left;
+  text-shadow: 0 1px 0 #fff;
+}
+/* line 381, ../scss/style.scss */
+#author-block .author-img {
+  border: 1px solid #fff;
+}
+/* line 385, ../scss/style.scss */
+#author-block .author-bio {
+  float: left;
+  clear: left;
+  font-size: 12px;
+  line-height: 1.6em;
+}
+/* line 393, ../scss/style.scss */
+#author-block .author-social,
+#author-block .author-name {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+/* line 398, ../scss/style.scss */
+#author-block .author-social {
+  float: right;
+}
+/* line 402, ../scss/style.scss */
+#author-block .author-social li {
+  display: inline-block;
+  list-style: none;
+}
+/* line 407, ../scss/style.scss */
+#author-block .author-social a {
+  text-decoration: none;
+}
+/* line 411, ../scss/style.scss */
+#author-block .back-to-top {
+  position: absolute;
+  text-decoration: none;
+}
+
+/* Media Queries
+================================================== */
+/* iPhone */
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  /* line 425, ../scss/style.scss */
+  h1, .article-title {
+    font-size: 43.995px;
+  }
+
+  /* line 431, ../scss/style.scss */
+  .header .article-title {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  /* line 438, ../scss/style.scss */
+  .header .article-type {
+    width: 100%;
+  }
+  /* line 442, ../scss/style.scss */
+  .header .author-name {
+    margin-left: 24px;
+    margin-right: 24px;
+    width: -webkit-calc(100% - ($margin * 2) );
+    width: calc(100% - ($margin * 2) );
+  }
+
+  /* line 455, ../scss/style.scss */
+  .article-body .asset-container,
+  .article-body .markdown-video {
+    width: -webkit-calc(100% + (24px * 2));
+    width: calc(100% + (24px * 2));
+    margin-left: -24px;
+  }
+  /* line 459, ../scss/style.scss */
+  .article-body .asset-container em {
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  /* line 466, ../scss/style.scss */
+  .article-body .pullquote {
+    width: -webkit-calc(100% + (12px * 2));
+    width: calc(100% + (12px * 2));
+    margin-left: -12px;
+  }
+  /* line 470, ../scss/style.scss */
+  .article-body > blockquote {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 477, ../scss/style.scss */
+  .article-subtitle,
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  /* line 484, ../scss/style.scss */
+  #author-block .author-img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+  /* line 491, ../scss/style.scss */
+  #author-block .author-wrap {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  /* line 496, ../scss/style.scss */
+  #author-block .back-to-top {
+    left: 24px;
+    bottom: 12px;
+  }
+}
+/* iPad & iPad mini */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* line 510, ../scss/style.scss */
+  .header .article-title {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  /* line 517, ../scss/style.scss */
+  .header .author-name {
+    margin-left: 48px;
+    margin-right: 48px;
+    width: -webkit-calc(100% - ($margin * 4) );
+    width: calc(100% - ($margin * 4) );
+  }
+
+  /* line 530, ../scss/style.scss */
+  .article-body .asset-container,
+  .article-body .markdown-video {
+    width: -webkit-calc(100% + (96px * 2));
+    width: calc(100% + (96px * 2));
+    margin-left: -96px;
+  }
+  /* line 534, ../scss/style.scss */
+  .article-body .asset-container em {
+    margin-right: 48px;
+    margin-left: 48px;
+  }
+  /* line 541, ../scss/style.scss */
+  .article-body .pullquote {
+    width: -webkit-calc(100% + (48px * 2));
+    width: calc(100% + (48px * 2));
+    margin-left: -48px;
+    padding-left: 96px;
+  }
+  /* line 545, ../scss/style.scss */
+  .article-body .pullquote blockquote::before {
+    content: "\201C";
+    display: block;
+    position: absolute;
+    left: 24px;
+    top: 36px;
+    font-size: 80px;
+    color: #fff;
+  }
+  /* line 556, ../scss/style.scss */
+  .article-body > blockquote {
+    margin-left: -48px;
+  }
+
+  /* line 561, ../scss/style.scss */
+  .article-subtitle {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  /* line 566, ../scss/style.scss */
+  .container {
+    padding-left: 96px;
+    padding-right: 96px;
+  }
+
+  /* line 573, ../scss/style.scss */
+  #author-block .author-img {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+  }
+  /* line 579, ../scss/style.scss */
+  #author-block .author-wrap {
+    min-height: 120px;
+    margin-left: 168px;
+  }
+  /* line 584, ../scss/style.scss */
+  #author-block .back-to-top {
+    left: 48px;
+    top: 48px;
+  }
+}

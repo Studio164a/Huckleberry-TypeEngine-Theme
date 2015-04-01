@@ -1,0 +1,46 @@
+/* Variables
+================================================== */
+
+/* Colours */
+$main-color: #495789;
+$main-shade: #edeef5;
+$body-color: #565656;
+$body-shade: #e6e6e6;
+$overlay-text: #FFF;
+$hr-color: #8a8a8a;
+
+/* Font sizes */
+$base-font-size: 15px;
+$line-height: $base-font-size * 1.6;
+$h1-font-size: $base-font-size * 4.615;
+$h1-line-height: $h1-font-size;
+$h2-font-size: $base-font-size * 2.3;
+$h2-line-height: $h2-font-size;
+$h3-font-size: $base-font-size * 1.846;
+$h3-line-height: $h3-font-size * 1.2;
+$h4-font-size: $base-font-size * 1.38;
+$h4-line-height: $h4-font-size * 1.4;
+$h5-font-size: $base-font-size * 1.23;
+$h5-line-height: $h5-font-size * 1.5;
+$h6-font-size: $base-font-size * 1.08;
+$h6-line-height: $h6-font-size * 1.6;
+
+$margin: $base-font-size * 1.6;
+
+/* Opening paragraph styling */
+$opening-paragraph-font-size: $base-font-size * 1.2667; /* 19px */
+$opening-paragraph-line-height: $opening-paragraph-font-size * 1.631; /* 31px */
+$opening-paragraph-color: darken( $body-color, 10% );
+$first-letter-font-size: $opening-paragraph-font-size * 6.3158; /* 120px */
+$first-letter-line-height: $first-letter-font-size * 0.75; /* 90px */
+
+/* Variables used in our media queries */
+$min-width: min-width; 
+$max-width: max-width; 
+$iphone-min: 320px; 
+$iphone-max: 568px;
+$ipad-min: 768px;
+$ipad-max: 1024px;
+
+/* iPad wrapper width */
+$ipad-wrapper-width: $ipad-min - $margin * 2;
